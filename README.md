@@ -162,8 +162,4 @@ This implementation is a predefined text-based lookup. It should not be describe
 - Add more detailed sorting history and statistics.
 - Add tests for item lookup, points, and badge progression.
 
-## Notes
 
-- The screenshots are illustrative examples from the supplied project document. The displayed account name and email may be personal information; replace or blur them before publishing if they belong to a real person.
-- Do not commit passwords, API keys, signing credentials, `local.properties`, or other machine-specific/private configuration.
-- Add a license only if you intend to grant others permission to reuse or modify the project.

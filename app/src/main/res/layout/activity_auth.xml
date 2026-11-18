@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SORTIFY"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:gravity="center"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Waste Management"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textColor="#999999" />
+
+    <!-- Toggle Buttons for Login/Register -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#E8F5E9"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/buttonLoginTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#1B5E20"
+            android:textColor="#FFFFFF"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/buttonRegisterTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Register"
+            android:textSize="14sp"
+            android:background="#E8F5E9"
+            android:textColor="#1B5E20"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+    <!-- LOGIN FORM -->
+    <LinearLayout
+        android:id="@+id/loginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in to continue your waste sorting journey"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Email Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="your@email.com"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter your password"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:inputType="textPassword" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Sign In"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#1B5E20"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+
+
+    </LinearLayout>
+
+    <!-- REGISTER FORM -->
+    <LinearLayout
+        android:id="@+id/registerForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join the Movement"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an account to start sorting responsibly"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Full Name Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Your full name"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:inputType="text" />
+
+        <!-- Email Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="your@email.com"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Create a strong password"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:inputType="textPassword" />
+
+        <!-- Confirm Password Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Confirm your password"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:inputType="textPassword" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Create Account"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#1B5E20"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Terms Checkbox -->
+        <CheckBox
+            android:id="@+id/checkBoxTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I agree to terms and conditions"
+            android:textSize="11sp"
+            android:textColor="#666666"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Protecting Tunisia's environment, one item at a time."
+        android:textSize="10sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="#999999" />
+
+</LinearLayout>

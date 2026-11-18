@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="← Back"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#757575"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you want to sort?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the item you'd like to dispose of responsibly"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/editTextItem"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="e.g: apple, battery, paper, plastic bottle..."
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonClassify"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="CLASSIFY WASTE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#1B5E20"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

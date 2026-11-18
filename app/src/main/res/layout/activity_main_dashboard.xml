@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#E8F5E9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SORTIFY"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20" />
+
+            <Button
+                android:id="@+id/buttonProfileDashboard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="👤"
+                android:textSize="20sp"
+                android:backgroundTint="#1B5E20"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome back, User!"
+            android:textSize="14sp"
+            android:textColor="#2E7D32" />
+
+    </LinearLayout>
+
+    <!-- Quick Stats Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Items Sorted"
+                android:textSize="11sp"
+                android:textColor="#999999"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewItemsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Points"
+                android:textSize="11sp"
+                android:textColor="#999999"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewTotalPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- This Week / This Month Stats -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingTop="0dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:background="#FFF8E1"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This Week"
+                android:textSize="11sp"
+                android:textColor="#999999"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewThisWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 items"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:background="#FFF8E1"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This Month"
+                android:textSize="11sp"
+                android:textColor="#999999"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewThisMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 items"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Main Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Start Sorting Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#1B5E20"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ready to Sort?"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Each item sorted earns you 10 points!"
+                    android:textSize="12sp"
+                    android:textColor="#C8E6C9"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/buttonStartSorting"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Sort an Item"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#A5D6A7"
+                    android:textColor="#1B5E20" />
+
+            </LinearLayout>
+
+            <!-- Recent Activity Card -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recent Activity"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Recent Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textViewRecentItem1Emoji"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewRecentItem1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No items yet"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textViewRecentItem1Category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sort your first item!"
+                        android:textSize="11sp"
+                        android:textColor="#666666" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewRecentItem1Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+0 pts"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1B5E20" />
+
+            </LinearLayout>
+
+            <!-- Recent Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textViewRecentItem2Emoji"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginRight="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewRecentItem2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="—"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textViewRecentItem2Category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sort more items"
+                        android:textSize="11sp"
+                        android:textColor="#666666" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewRecentItem2Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+0 pts"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1B5E20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="🏠 Home"
+            android:textSize="11sp"
+            android:backgroundTint="#E8F5E9"
+            android:textColor="#1B5E20"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/navSort"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="♻️ Sort"
+            android:textSize="11sp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#666666"
+            android:layout_margin="4dp" />
+
+    </LinearLayout>
+</LinearLayout>
